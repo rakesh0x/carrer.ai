@@ -1,4 +1,4 @@
-import type { TamboResponse, CareerGuidanceState, UIAction } from './types'
+import type { TamboResponse, UIAction, CareerGuidanceState } from './types'
 
 export class TamboAIService {
   private static readonly MOCK_RESPONSES = [

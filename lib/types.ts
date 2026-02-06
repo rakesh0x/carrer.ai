@@ -1,4 +1,15 @@
-
+// Define the shape of CareerGuidanceState
+export interface CareerGuidanceState {
+  careerGoal: {
+    goal: string;
+    timeline: string;
+    priority: string;
+  };
+  activeComponents: string[];
+  clarity: number;
+  confidence: number;
+  [key: string]: any; // Allow for extension
+}
 // Define types directly here to avoid circular imports
 
 
@@ -13,11 +24,10 @@ export interface TamboResponse {
   actions: UIAction[];
   intent?: string;
   state?: any;
-  // Add other properties as needed
-}
 
-export interface CareerGuidanceState {
-  // Define properties as needed
+  clarity?: number;
+  confidence?: number;
+  // ...other properties as needed
 }
 
 export class TamboAIService {

@@ -20,6 +20,11 @@ const INITIAL_STATE: CareerGuidanceState = {
   confidence: 0,
   insights: [],
   activeComponents: [],
+  careerGoal: {
+    goal: '',
+    timeline: '',
+    priority: '',
+  },
 }
 
 // Animation variants for hackathon impact

@@ -515,7 +515,6 @@ export default function Home() {
                   <div className="space-y-6">
                     <DynamicComponentRenderer
                       actions={allActions}
-                      state={state}
                     />
                   </div>
 
